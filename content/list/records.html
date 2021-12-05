@@ -1,0 +1,25 @@
+<table class="hoverable striped center">
+    <thead>
+        <tr class="bg-blue white bold">
+            <td>Date deadline</td>
+            <td>Taks</td>
+            <td>Description</td>
+            <td>Priority</td>
+            <td>Set done</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        {@items}
+        <tr>
+            <td>{%date_deadline%}</td>
+            <td>{%task%}</td>
+            <td>{%description%}</td>
+            <td>{%priority%}</td>
+            <td>
+                <button class="delete-task bg-red white" value="{%task_id%}">X</button>
+            </td>
+        </tr>
+        {items@}
+    </tbody>
+</table>
